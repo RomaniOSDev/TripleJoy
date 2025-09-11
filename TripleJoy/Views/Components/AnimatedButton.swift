@@ -145,7 +145,7 @@ struct PulsingButton: View {
             .cornerRadius(12)
             .scaleEffect(isPulsing ? 1.05 : 1.0)
             .shadow(radius: isPulsing ? 8 : 5)
-            .animation(.easeInOut(duration: 1.0).repeatForever(autoreverses: true), value: isPulsing)
+            //.animation(.easeInOut(duration: 1.0).repeatForever(autoreverses: true), value: isPulsing)
         }
         .buttonStyle(PlainButtonStyle())
         .onAppear {
