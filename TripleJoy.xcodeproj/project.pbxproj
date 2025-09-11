@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		747C625A2E715A7900E97783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62502E715A7900E97783 /* AppDelegate.swift */; };
+		747C625B2E715A7900E97783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62572E715A7900E97783 /* SceneDelegate.swift */; };
+		747C625D2E715A7900E97783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747C62512E715A7900E97783 /* Assets.xcassets */; };
+		747C625F2E715A7900E97783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747C62542E715A7900E97783 /* LaunchScreen.storyboard */; };
+		747C62602E715A7900E97783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747C62562E715A7900E97783 /* Main.storyboard */; };
+		747C627B2E715DEA00E97783 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62792E715DEA00E97783 /* SettingsViewModel.swift */; };
+		747C627C2E715DEA00E97783 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62782E715DEA00E97783 /* GameViewModel.swift */; };
+		747C627D2E715DEA00E97783 /* AchievementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62772E715DEA00E97783 /* AchievementsViewModel.swift */; };
+		747C62802E715DF100E97783 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C627E2E715DF100E97783 /* GameModels.swift */; };
+		747C62832E715DF700E97783 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62812E715DF700E97783 /* SoundManager.swift */; };
+		74EEAE442E72AEEC005E9238 /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE392E72AEEC005E9238 /* AnimatedBackground.swift */; };
+		74EEAE452E72AEEC005E9238 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3A2E72AEEC005E9238 /* AnimatedButton.swift */; };
+		74EEAE462E72AEEC005E9238 /* GameAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3B2E72AEEC005E9238 /* GameAnimations.swift */; };
+		74EEAE472E72AEEC005E9238 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3D2E72AEEC005E9238 /* AchievementsView.swift */; };
+		74EEAE482E72AEEC005E9238 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3E2E72AEEC005E9238 /* ContentView.swift */; };
+		74EEAE492E72AEEC005E9238 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3F2E72AEEC005E9238 /* GameView.swift */; };
+		74EEAE4A2E72AEEC005E9238 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE402E72AEEC005E9238 /* MainTabView.swift */; };
+		74EEAE4B2E72AEEC005E9238 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE412E72AEEC005E9238 /* OnboardingView.swift */; };
+		74EEAE4C2E72AEEC005E9238 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE422E72AEEC005E9238 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		747C62382E715A6200E97783 /* TripleJoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripleJoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		747C62502E715A7900E97783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		747C62512E715A7900E97783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		747C62522E715A7900E97783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747C62532E715A7900E97783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		747C62552E715A7900E97783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		747C62572E715A7900E97783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		747C62772E715DEA00E97783 /* AchievementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewModel.swift; sourceTree = "<group>"; };
+		747C62782E715DEA00E97783 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		747C62792E715DEA00E97783 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		747C627E2E715DF100E97783 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		747C62812E715DF700E97783 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		74EEAE392E72AEEC005E9238 /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
+		74EEAE3A2E72AEEC005E9238 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
+		74EEAE3B2E72AEEC005E9238 /* GameAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAnimations.swift; sourceTree = "<group>"; };
+		74EEAE3D2E72AEEC005E9238 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		74EEAE3E2E72AEEC005E9238 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74EEAE3F2E72AEEC005E9238 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		74EEAE402E72AEEC005E9238 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		74EEAE412E72AEEC005E9238 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		74EEAE422E72AEEC005E9238 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		86478AF01C6AA458EDFAE78F /* Pods-TripleJoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleJoy.debug.xcconfig"; path = "Target Support Files/Pods-TripleJoy/Pods-TripleJoy.debug.xcconfig"; sourceTree = "<group>"; };
+		A01FF621B552EB9E64A7554D /* Pods-TripleJoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleJoy.release.xcconfig"; path = "Target Support Files/Pods-TripleJoy/Pods-TripleJoy.release.xcconfig"; sourceTree = "<group>"; };
+		BFECC3B4CBB7997C9F01B8B9 /* Pods_TripleJoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleJoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		747C62352E715A6200E97783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		747C622F2E715A6200E97783 = {
+			isa = PBXGroup;
+			children = (
+				747C62592E715A7900E97783 /* TripleJoy */,
+				747C62392E715A6200E97783 /* Products */,
+				A0A6247663A99CCE843237C4 /* Pods */,
+				EE1167774A42487216C1E979 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		747C62392E715A6200E97783 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				747C62382E715A6200E97783 /* TripleJoy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		747C62592E715A7900E97783 /* TripleJoy */ = {
+			isa = PBXGroup;
+			children = (
+				74EEAE432E72AEEC005E9238 /* Views */,
+				747C62502E715A7900E97783 /* AppDelegate.swift */,
+				747C62512E715A7900E97783 /* Assets.xcassets */,
+				747C62522E715A7900E97783 /* Info.plist */,
+				747C62542E715A7900E97783 /* LaunchScreen.storyboard */,
+				747C62562E715A7900E97783 /* Main.storyboard */,
+				747C62572E715A7900E97783 /* SceneDelegate.swift */,
+				747C627A2E715DEA00E97783 /* ViewModels */,
+				747C627F2E715DF100E97783 /* Models */,
+				747C62822E715DF700E97783 /* Utils */,
+			);
+			path = TripleJoy;
+			sourceTree = "<group>";
+		};
+		747C627A2E715DEA00E97783 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				747C62772E715DEA00E97783 /* AchievementsViewModel.swift */,
+				747C62782E715DEA00E97783 /* GameViewModel.swift */,
+				747C62792E715DEA00E97783 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		747C627F2E715DF100E97783 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				747C627E2E715DF100E97783 /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		747C62822E715DF700E97783 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				747C62812E715DF700E97783 /* SoundManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		74EEAE3C2E72AEEC005E9238 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				74EEAE392E72AEEC005E9238 /* AnimatedBackground.swift */,
+				74EEAE3A2E72AEEC005E9238 /* AnimatedButton.swift */,
+				74EEAE3B2E72AEEC005E9238 /* GameAnimations.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		74EEAE432E72AEEC005E9238 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74EEAE3C2E72AEEC005E9238 /* Components */,
+				74EEAE3D2E72AEEC005E9238 /* AchievementsView.swift */,
+				74EEAE3E2E72AEEC005E9238 /* ContentView.swift */,
+				74EEAE3F2E72AEEC005E9238 /* GameView.swift */,
+				74EEAE402E72AEEC005E9238 /* MainTabView.swift */,
+				74EEAE412E72AEEC005E9238 /* OnboardingView.swift */,
+				74EEAE422E72AEEC005E9238 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0A6247663A99CCE843237C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86478AF01C6AA458EDFAE78F /* Pods-TripleJoy.debug.xcconfig */,
+				A01FF621B552EB9E64A7554D /* Pods-TripleJoy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE1167774A42487216C1E979 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFECC3B4CBB7997C9F01B8B9 /* Pods_TripleJoy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		747C62372E715A6200E97783 /* TripleJoy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747C624B2E715A6200E97783 /* Build configuration list for PBXNativeTarget "TripleJoy" */;
+			buildPhases = (
+				DA32EFCD1C18F59FF2ACA17C /* [CP] Check Pods Manifest.lock */,
+				747C62342E715A6200E97783 /* Sources */,
+				747C62352E715A6200E97783 /* Frameworks */,
+				747C62362E715A6200E97783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripleJoy;
+			productName = TripleJoy;
+			productReference = 747C62382E715A6200E97783 /* TripleJoy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		747C62302E715A6200E97783 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					747C62372E715A6200E97783 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 747C62332E715A6200E97783 /* Build configuration list for PBXProject "TripleJoy" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 747C622F2E715A6200E97783;
+			productRefGroup = 747C62392E715A6200E97783 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				747C62372E715A6200E97783 /* TripleJoy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		747C62362E715A6200E97783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747C625D2E715A7900E97783 /* Assets.xcassets in Resources */,
+				747C625F2E715A7900E97783 /* LaunchScreen.storyboard in Resources */,
+				747C62602E715A7900E97783 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA32EFCD1C18F59FF2ACA17C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripleJoy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		747C62342E715A6200E97783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747C625A2E715A7900E97783 /* AppDelegate.swift in Sources */,
+				74EEAE442E72AEEC005E9238 /* AnimatedBackground.swift in Sources */,
+				74EEAE452E72AEEC005E9238 /* AnimatedButton.swift in Sources */,
+				74EEAE462E72AEEC005E9238 /* GameAnimations.swift in Sources */,
+				74EEAE472E72AEEC005E9238 /* AchievementsView.swift in Sources */,
+				74EEAE482E72AEEC005E9238 /* ContentView.swift in Sources */,
+				74EEAE492E72AEEC005E9238 /* GameView.swift in Sources */,
+				74EEAE4A2E72AEEC005E9238 /* MainTabView.swift in Sources */,
+				74EEAE4B2E72AEEC005E9238 /* OnboardingView.swift in Sources */,
+				74EEAE4C2E72AEEC005E9238 /* SettingsView.swift in Sources */,
+				747C62832E715DF700E97783 /* SoundManager.swift in Sources */,
+				747C627B2E715DEA00E97783 /* SettingsViewModel.swift in Sources */,
+				747C627C2E715DEA00E97783 /* GameViewModel.swift in Sources */,
+				747C627D2E715DEA00E97783 /* AchievementsViewModel.swift in Sources */,
+				747C625B2E715A7900E97783 /* SceneDelegate.swift in Sources */,
+				747C62802E715DF100E97783 /* GameModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		747C62542E715A7900E97783 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				747C62532E715A7900E97783 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		747C62562E715A7900E97783 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				747C62552E715A7900E97783 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		747C624C2E715A6200E97783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86478AF01C6AA458EDFAE78F /* Pods-TripleJoy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TripleJoy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TripleJoy;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jac.tr1pl3j0j;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		747C624D2E715A6200E97783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01FF621B552EB9E64A7554D /* Pods-TripleJoy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TripleJoy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TripleJoy;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jac.tr1pl3j0j;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		747C624E2E715A6200E97783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		747C624F2E715A6200E97783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		747C62332E715A6200E97783 /* Build configuration list for PBXProject "TripleJoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747C624E2E715A6200E97783 /* Debug */,
+				747C624F2E715A6200E97783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747C624B2E715A6200E97783 /* Build configuration list for PBXNativeTarget "TripleJoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747C624C2E715A6200E97783 /* Debug */,
+				747C624D2E715A6200E97783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 747C62302E715A6200E97783 /* Project object */;
+}
