@@ -1,3 +1,10 @@
+//
+//  AppDelegate.swift
+//  TripleJoy
+//
+//  Created by Роман Главацкий on 10.09.2025.
+//
+
 import SwiftUI
 import StoreKit
 

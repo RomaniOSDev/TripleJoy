@@ -17,9 +17,6 @@
 		747C627D2E715DEA00E97783 /* AchievementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62772E715DEA00E97783 /* AchievementsViewModel.swift */; };
 		747C62802E715DF100E97783 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C627E2E715DF100E97783 /* GameModels.swift */; };
 		747C62832E715DF700E97783 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62812E715DF700E97783 /* SoundManager.swift */; };
-		749E83B62E7AA0A5005F21E6 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E83B32E7AA0A5005F21E6 /* InternetViewController.swift */; };
-		749E83B72E7AA0A5005F21E6 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E83B42E7AA0A5005F21E6 /* LoaderViewController.swift */; };
-		749E83B82E7AA0A5005F21E6 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E83B22E7AA0A5005F21E6 /* CheckLink.swift */; };
 		749E83BB2E7AA108005F21E6 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 749E83BA2E7AA108005F21E6 /* AppsFlyerLib */; };
 		749E83BE2E7AA122005F21E6 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 749E83BD2E7AA122005F21E6 /* OneSignalExtension */; };
 		749E83C02E7AA122005F21E6 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 749E83BF2E7AA122005F21E6 /* OneSignalFramework */; };
@@ -49,9 +46,6 @@
 		747C62792E715DEA00E97783 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		747C627E2E715DF100E97783 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
 		747C62812E715DF700E97783 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
-		749E83B22E7AA0A5005F21E6 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
-		749E83B32E7AA0A5005F21E6 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
-		749E83B42E7AA0A5005F21E6 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		749E83C52E7AA550005F21E6 /* TripleJoy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TripleJoy.entitlements; sourceTree = "<group>"; };
 		74EEAE392E72AEEC005E9238 /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
 		74EEAE3A2E72AEEC005E9238 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
@@ -145,16 +139,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		749E83B52E7AA0A5005F21E6 /* LoadingView */ = {
-			isa = PBXGroup;
-			children = (
-				749E83B22E7AA0A5005F21E6 /* CheckLink.swift */,
-				749E83B32E7AA0A5005F21E6 /* InternetViewController.swift */,
-				749E83B42E7AA0A5005F21E6 /* LoaderViewController.swift */,
-			);
-			path = LoadingView;
-			sourceTree = "<group>";
-		};
 		74EEAE3C2E72AEEC005E9238 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +159,6 @@
 				74EEAE402E72AEEC005E9238 /* MainTabView.swift */,
 				74EEAE412E72AEEC005E9238 /* OnboardingView.swift */,
 				74EEAE422E72AEEC005E9238 /* SettingsView.swift */,
-				749E83B52E7AA0A5005F21E6 /* LoadingView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,9 +286,6 @@
 				74EEAE452E72AEEC005E9238 /* AnimatedButton.swift in Sources */,
 				74EEAE462E72AEEC005E9238 /* GameAnimations.swift in Sources */,
 				74EEAE472E72AEEC005E9238 /* AchievementsView.swift in Sources */,
-				749E83B62E7AA0A5005F21E6 /* InternetViewController.swift in Sources */,
-				749E83B72E7AA0A5005F21E6 /* LoaderViewController.swift in Sources */,
-				749E83B82E7AA0A5005F21E6 /* CheckLink.swift in Sources */,
 				74EEAE482E72AEEC005E9238 /* ContentView.swift in Sources */,
 				74EEAE492E72AEEC005E9238 /* GameView.swift in Sources */,
 				74EEAE4A2E72AEEC005E9238 /* MainTabView.swift in Sources */,
@@ -364,7 +344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jac.tr1pl3j0j;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -399,7 +379,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jac.tr1pl3j0j;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

@@ -16,28 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else {return}
         window = UIWindow(windowScene: windowScene)
-        
-        let controller: UIViewController
-            controller = LoadingSplash()
-        window?.rootViewController = controller
+        window?.rootViewController = UIHostingController(rootView: ContentView())
         window?.makeKeyAndVisible()
-
-        for context in connectionOptions.urlContexts {
-            AppsFlyerLib.shared().handleOpen(context.url, options: nil)
-        }
     }
 
-    // 3. Явно указываем имена параметров для избежания неоднозначности
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        URLContexts.forEach { context in
-            AppsFlyerLib.shared().handleOpen(context.url, options: nil)
-        }
-    }
-
-    // 4. Аналогично для Universal Links
-    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
-        AppsFlyerLib.shared().continue(userActivity, restorationHandler: nil)
-    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
