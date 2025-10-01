@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TripleJoy
 //
-//  Created by Роман Главацкий on 10.09.2025.
+//  Created by Jack Foster on 10.09.2025.
 //
 
 import UIKit
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // AppsFlyer Init
            AppsFlyerLib.shared().appsFlyerDevKey = "eYieTU85bme3X4jVFWtpkY"
            AppsFlyerLib.shared().appleAppID = "6752352543"
-           //AppsFlyerLib.shared().delegate = self
+           AppsFlyerLib.shared().delegate = self
            AppsFlyerLib.shared().isDebug = true
            
         AppsFlyerLib.shared().start()
@@ -49,3 +49,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: AppsFlyerLibDelegate {
+    func onConversionDataSuccess(_ data: [AnyHashable : Any]) {
+         var finalURL = ""
+        let appsflyerID = AppsFlyerLib.shared().getAppsFlyerUID()
+            print("📬 Conversion: \(data)")
+            if let dict = data as? [String: Any], let campaign = dict["campaign"] as? String {
+                let extra = campaign
+                    .components(separatedBy: "||")
+                    .compactMap { pair -> String? in
+                        let p = pair.split(separator: "="); guard p.count == 2 else { return nil }
+                        return "&\(p[0])=\(p[1])"
+                    }
+                    .joined()
+                print("🧩 Extra = \(extra)")
+               finalURL += "appsflyer_id=\(appsflyerID)\(extra)"
+            } else {
+                print("🌱 Organic")
+                finalURL += "appsflyer_id=\(appsflyerID)&source=organic"
+            }
+        print("✅ Final URL: \(finalURL)")
+        UserDefaults.standard.set(finalURL, forKey: "finalAppsflyerURL")
+        NotificationCenter.default.post(name: Notification.Name("AppsFlyerDataReceived"), object: nil)
+        }
+
+    func onConversionDataFail(_ error: Error) {
+        print("❌ Conversion data error: \(error.localizedDescription)")
+    }
+}

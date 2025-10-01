@@ -1,3 +1,10 @@
+//
+//  GameModels.swift
+//  TripleJoy
+//
+//  Created by Jack Foster on 10.09.2025.
+//
+
 import Foundation
 import UIKit
 

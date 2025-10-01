@@ -22,6 +22,9 @@
 		749E83C02E7AA122005F21E6 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 749E83BF2E7AA122005F21E6 /* OneSignalFramework */; };
 		749E83C22E7AA122005F21E6 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 749E83C12E7AA122005F21E6 /* OneSignalInAppMessages */; };
 		749E83C42E7AA122005F21E6 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 749E83C32E7AA122005F21E6 /* OneSignalLocation */; };
+		74C72A032E8D2463001BCA80 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C72A002E8D2463001BCA80 /* InternetViewController.swift */; };
+		74C72A042E8D2463001BCA80 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C729FF2E8D2463001BCA80 /* CheckLink.swift */; };
+		74C72A052E8D2463001BCA80 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C72A012E8D2463001BCA80 /* LoaderViewController.swift */; };
 		74EEAE442E72AEEC005E9238 /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE392E72AEEC005E9238 /* AnimatedBackground.swift */; };
 		74EEAE452E72AEEC005E9238 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3A2E72AEEC005E9238 /* AnimatedButton.swift */; };
 		74EEAE462E72AEEC005E9238 /* GameAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3B2E72AEEC005E9238 /* GameAnimations.swift */; };
@@ -47,6 +50,9 @@
 		747C627E2E715DF100E97783 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
 		747C62812E715DF700E97783 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		749E83C52E7AA550005F21E6 /* TripleJoy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TripleJoy.entitlements; sourceTree = "<group>"; };
+		74C729FF2E8D2463001BCA80 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
+		74C72A002E8D2463001BCA80 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		74C72A012E8D2463001BCA80 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		74EEAE392E72AEEC005E9238 /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
 		74EEAE3A2E72AEEC005E9238 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 		74EEAE3B2E72AEEC005E9238 /* GameAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAnimations.swift; sourceTree = "<group>"; };
@@ -139,6 +145,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		74C72A022E8D2463001BCA80 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				74C729FF2E8D2463001BCA80 /* CheckLink.swift */,
+				74C72A002E8D2463001BCA80 /* InternetViewController.swift */,
+				74C72A012E8D2463001BCA80 /* LoaderViewController.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 		74EEAE3C2E72AEEC005E9238 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +175,7 @@
 				74EEAE402E72AEEC005E9238 /* MainTabView.swift */,
 				74EEAE412E72AEEC005E9238 /* OnboardingView.swift */,
 				74EEAE422E72AEEC005E9238 /* SettingsView.swift */,
+				74C72A022E8D2463001BCA80 /* LoadingView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C72A032E8D2463001BCA80 /* InternetViewController.swift in Sources */,
+				74C72A042E8D2463001BCA80 /* CheckLink.swift in Sources */,
+				74C72A052E8D2463001BCA80 /* LoaderViewController.swift in Sources */,
 				747C625A2E715A7900E97783 /* AppDelegate.swift in Sources */,
 				74EEAE442E72AEEC005E9238 /* AnimatedBackground.swift in Sources */,
 				74EEAE452E72AEEC005E9238 /* AnimatedButton.swift in Sources */,
@@ -344,7 +364,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jac.tr1pl3j0j;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -379,7 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jac.tr1pl3j0j;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

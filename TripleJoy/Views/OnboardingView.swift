@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
+//  OnboardingView.swift
 //  TripleJoy
 //
-//  Created by Роман Главацкий on 10.09.2025.
+//  Created by Jack Foster on 10.09.2025.
 //
 
 import SwiftUI
