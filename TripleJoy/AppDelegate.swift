@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import OneSignalFramework
 import AppsFlyerLib
 
 @main
@@ -24,11 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            
         AppsFlyerLib.shared().start()
         let appsFlyerId = AppsFlyerLib.shared().getAppsFlyerUID()
-        
-        
-        //MARK: - One signal
-        OneSignal.initialize("b5a9b955-eef8-4954-928c-05cdfd93d5cb", withLaunchOptions: nil)
-        OneSignal.login(appsFlyerId)
         return true
     }
 

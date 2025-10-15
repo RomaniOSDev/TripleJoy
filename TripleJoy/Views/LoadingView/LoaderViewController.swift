@@ -7,7 +7,6 @@
 
 import UIKit
 import SwiftUI
-import OneSignalFramework
 import AppsFlyerLib
 
 class LoadingSplash: UIViewController {
@@ -91,7 +90,7 @@ class LoadingSplash: UIViewController {
                     }
                     let link = self.generateTrackingLink()
                     activityIndicator.stopAnimating()
-                    let vc = WebviewVC(url: URL(string: link)!)
+                    let vc = SafariTabsVC(url: URL(string: link)!)
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 } else {
