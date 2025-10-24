@@ -18,9 +18,11 @@
 		747C62802E715DF100E97783 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C627E2E715DF100E97783 /* GameModels.swift */; };
 		747C62832E715DF700E97783 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C62812E715DF700E97783 /* SoundManager.swift */; };
 		749E83BB2E7AA108005F21E6 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 749E83BA2E7AA108005F21E6 /* AppsFlyerLib */; };
-		74B5665E2EA03FAD008F3E50 /* SafariTabsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B5665D2EA03FAD008F3E50 /* SafariTabsVC.swift */; };
 		74C72A042E8D2463001BCA80 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C729FF2E8D2463001BCA80 /* CheckLink.swift */; };
-		74C72A052E8D2463001BCA80 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C72A012E8D2463001BCA80 /* LoaderViewController.swift */; };
+		74E0D7102EAB5227000F66C4 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 74E0D70F2EAB5227000F66C4 /* OneSignalFramework */; };
+		74E0D7142EAB5269000F66C4 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0D7122EAB5269000F66C4 /* InternetViewController.swift */; };
+		74E0D7152EAB5269000F66C4 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0D7132EAB5269000F66C4 /* LoaderViewController.swift */; };
+		74E0D7162EAB5269000F66C4 /* OneSignalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0D7112EAB5269000F66C4 /* OneSignalService.swift */; };
 		74EEAE442E72AEEC005E9238 /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE392E72AEEC005E9238 /* AnimatedBackground.swift */; };
 		74EEAE452E72AEEC005E9238 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3A2E72AEEC005E9238 /* AnimatedButton.swift */; };
 		74EEAE462E72AEEC005E9238 /* GameAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEAE3B2E72AEEC005E9238 /* GameAnimations.swift */; };
@@ -46,9 +48,10 @@
 		747C627E2E715DF100E97783 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
 		747C62812E715DF700E97783 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		749E83C52E7AA550005F21E6 /* TripleJoy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TripleJoy.entitlements; sourceTree = "<group>"; };
-		74B5665D2EA03FAD008F3E50 /* SafariTabsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariTabsVC.swift; sourceTree = "<group>"; };
 		74C729FF2E8D2463001BCA80 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
-		74C72A012E8D2463001BCA80 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		74E0D7112EAB5269000F66C4 /* OneSignalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSignalService.swift; sourceTree = "<group>"; };
+		74E0D7122EAB5269000F66C4 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		74E0D7132EAB5269000F66C4 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		74EEAE392E72AEEC005E9238 /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
 		74EEAE3A2E72AEEC005E9238 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 		74EEAE3B2E72AEEC005E9238 /* GameAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAnimations.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E0D7102EAB5227000F66C4 /* OneSignalFramework in Frameworks */,
 				749E83BB2E7AA108005F21E6 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,9 +144,10 @@
 		74C72A022E8D2463001BCA80 /* LoadingView */ = {
 			isa = PBXGroup;
 			children = (
-				74B5665D2EA03FAD008F3E50 /* SafariTabsVC.swift */,
 				74C729FF2E8D2463001BCA80 /* CheckLink.swift */,
-				74C72A012E8D2463001BCA80 /* LoaderViewController.swift */,
+				74E0D7112EAB5269000F66C4 /* OneSignalService.swift */,
+				74E0D7122EAB5269000F66C4 /* InternetViewController.swift */,
+				74E0D7132EAB5269000F66C4 /* LoaderViewController.swift */,
 			);
 			path = LoadingView;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			mainGroup = 747C622F2E715A6200E97783;
 			packageReferences = (
 				749E83B92E7AA108005F21E6 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				74E0D70E2EAB5227000F66C4 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
 			);
 			productRefGroup = 747C62392E715A6200E97783 /* Products */;
 			projectDirPath = "";
@@ -289,9 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E0D7142EAB5269000F66C4 /* InternetViewController.swift in Sources */,
+				74E0D7152EAB5269000F66C4 /* LoaderViewController.swift in Sources */,
+				74E0D7162EAB5269000F66C4 /* OneSignalService.swift in Sources */,
 				74C72A042E8D2463001BCA80 /* CheckLink.swift in Sources */,
-				74C72A052E8D2463001BCA80 /* LoaderViewController.swift in Sources */,
-				74B5665E2EA03FAD008F3E50 /* SafariTabsVC.swift in Sources */,
 				747C625A2E715A7900E97783 /* AppDelegate.swift in Sources */,
 				74EEAE442E72AEEC005E9238 /* AnimatedBackground.swift in Sources */,
 				74EEAE452E72AEEC005E9238 /* AnimatedButton.swift in Sources */,
@@ -345,6 +352,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TripleJoy/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TripleJoy;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We only use notifications to keep you informed. No tracking or advertising identifiers are collected.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -355,7 +363,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.3;
+				MARKETING_VERSION = 1.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jac.tr1pl3j0j;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -380,6 +388,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TripleJoy/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TripleJoy;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We only use notifications to keep you informed. No tracking or advertising identifiers are collected.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -390,7 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.3;
+				MARKETING_VERSION = 1.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jac.tr1pl3j0j;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -554,6 +563,14 @@
 				minimumVersion = 6.17.5;
 			};
 		};
+		74E0D70E2EAB5227000F66C4 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -561,6 +578,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 749E83B92E7AA108005F21E6 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
 			productName = AppsFlyerLib;
+		};
+		74E0D70F2EAB5227000F66C4 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74E0D70E2EAB5227000F66C4 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

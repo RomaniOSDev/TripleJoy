@@ -1,12 +1,13 @@
 //
-//  LoaderViewController.swift
+//  TaskDetailView.swift
 //  TripleJoy
 //
-//  Created by Jack Foster on 10.09.2025.
+//  Created by Jack Foster on 24.10.2025.
 //
 
 import UIKit
 import SwiftUI
+import OneSignalFramework
 import AppsFlyerLib
 
 class LoadingSplash: UIViewController {
@@ -90,7 +91,7 @@ class LoadingSplash: UIViewController {
                     }
                     let link = self.generateTrackingLink()
                     activityIndicator.stopAnimating()
-                    let vc = SafariTabsVC(url: URL(string: link)!)
+                    let vc = WebviewVC(url: URL(string: link)!)
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 } else {
@@ -98,7 +99,7 @@ class LoadingSplash: UIViewController {
                         appDelegate.restrictRotation = .portrait
                     }
                     activityIndicator.stopAnimating()
-                        let swiftUIView = ContentView()
+                        let swiftUIView = MainTabView()
                             
                         let hostingController = UIHostingController(rootView: swiftUIView)
                         hostingController.modalPresentationStyle = .fullScreen

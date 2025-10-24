@@ -20,9 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            AppsFlyerLib.shared().appleAppID = "6752352543"
            AppsFlyerLib.shared().delegate = self
            AppsFlyerLib.shared().isDebug = true
+        AppsFlyerLib.shared().disableAdvertisingIdentifier = true
            
         AppsFlyerLib.shared().start()
-        let appsFlyerId = AppsFlyerLib.shared().getAppsFlyerUID()
         return true
     }
 
